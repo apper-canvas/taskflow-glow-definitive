@@ -38,11 +38,9 @@
   .priority-dot {
     @apply w-3 h-3 rounded-full hover:animate-pulse-soft transition-all duration-150;
   }
-
-  .sidebar-item {
-    @apply flex items-center px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-primary transition-all duration-200 rounded-lg mx-2 group;
+.sidebar-item {
+    @apply flex items-center px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-primary transition-all duration-200 rounded-lg mx-2;
   }
-
   .sidebar-item.active {
     @apply bg-primary text-white shadow-lg border-l-4 border-accent;
   }
