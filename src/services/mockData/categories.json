@@ -1,0 +1,26 @@
+[
+  {
+    "Id": 1,
+    "name": "Work Projects",
+    "color": "#5B4FE5",
+    "order": 1
+  },
+  {
+    "Id": 2,
+    "name": "Development",
+    "color": "#10B981",
+    "order": 2
+  },
+  {
+    "Id": 3,
+    "name": "Management",
+    "color": "#F59E0B",
+    "order": 3
+  },
+  {
+    "Id": 4,
+    "name": "Personal",
+    "color": "#EF4444",
+    "order": 4
+  }
+]

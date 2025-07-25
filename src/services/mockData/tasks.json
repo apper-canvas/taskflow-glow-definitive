@@ -1,0 +1,90 @@
+[
+  {
+    "Id": 1,
+    "title": "Review quarterly marketing reports",
+    "description": "Analyze Q3 performance metrics and prepare insights for the upcoming strategy meeting",
+    "categoryId": "1",
+    "priority": "high",
+    "dueDate": "2024-01-25",
+    "completed": false,
+    "createdAt": "2024-01-20T09:00:00Z",
+    "order": 1
+  },
+  {
+    "Id": 2,
+    "title": "Update project documentation",
+    "description": "Revise API documentation and add new endpoint specifications",
+    "categoryId": "2",
+    "priority": "medium",
+    "dueDate": "2024-01-28",
+    "completed": false,
+    "createdAt": "2024-01-20T10:30:00Z",
+    "order": 2
+  },
+  {
+    "Id": 3,
+    "title": "Schedule team one-on-ones",
+    "description": "Book individual sessions with all team members for next week",
+    "categoryId": "3",
+    "priority": "medium",
+    "dueDate": "2024-01-24",
+    "completed": true,
+    "createdAt": "2024-01-19T14:15:00Z",
+    "order": 3
+  },
+  {
+    "Id": 4,
+    "title": "Prepare presentation slides",
+    "description": "Create slide deck for client presentation on project progress and next steps",
+    "categoryId": "1",
+    "priority": "high",
+    "dueDate": "2024-01-26",
+    "completed": false,
+    "createdAt": "2024-01-21T08:45:00Z",
+    "order": 4
+  },
+  {
+    "Id": 5,
+    "title": "Code review for new feature",
+    "description": "Review pull request for user authentication implementation",
+    "categoryId": "2",
+    "priority": "high",
+    "dueDate": "2024-01-23",
+    "completed": false,
+    "createdAt": "2024-01-22T11:20:00Z",
+    "order": 5
+  },
+  {
+    "Id": 6,
+    "title": "Buy groceries",
+    "description": "Weekly grocery shopping - milk, eggs, bread, vegetables",
+    "categoryId": "4",
+    "priority": "low",
+    "dueDate": "2024-01-27",
+    "completed": false,
+    "createdAt": "2024-01-21T16:30:00Z",
+    "order": 6
+  },
+  {
+    "Id": 7,
+    "title": "Call dentist for appointment",
+    "description": "Schedule routine cleaning appointment for next month",
+    "categoryId": "4",
+    "priority": "low",
+    "dueDate": null,
+    "completed": true,
+    "createdAt": "2024-01-18T12:00:00Z",
+    "order": 7
+  },
+  {
+    "Id": 8,
+    "title": "Research new design tools",
+    "description": "Evaluate Figma alternatives and compare pricing for team subscription",
+    "categoryId": "2",
+    "priority": "low",
+    "dueDate": "2024-02-01",
+    "completed": false,
+    "createdAt": "2024-01-22T15:45:00Z",
+    "order": 8
+  }
+]
