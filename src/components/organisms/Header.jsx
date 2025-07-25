@@ -1,9 +1,26 @@
-import { useState } from "react"
+import { useState, useContext } from "react"
 import { motion } from "framer-motion"
 import ApperIcon from "@/components/ApperIcon"
 import Button from "@/components/atoms/Button"
 import SearchBar from "@/components/molecules/SearchBar"
 import FilterBar from "@/components/molecules/FilterBar"
+import { AuthContext } from '../../App'
+
+const LogoutButton = () => {
+  const { logout } = useContext(AuthContext);
+  
+  return (
+    <Button
+      variant="ghost"
+      size="sm"
+      onClick={logout}
+      className="flex items-center gap-2 text-gray-600 hover:text-gray-900"
+    >
+      <ApperIcon name="LogOut" className="w-4 h-4" />
+      <span className="hidden sm:inline">Logout</span>
+    </Button>
+  );
+};
 
 const Header = ({ 
   onSearch, 
@@ -15,7 +32,7 @@ const Header = ({
 }) => {
   const [showFilters, setShowFilters] = useState(false)
 
-  return (
+return (
     <div className="bg-white border-b border-gray-200 px-6 py-4">
       <div className="flex items-center justify-between mb-4">
         <div>
@@ -32,6 +49,8 @@ const Header = ({
         </div>
 
         <div className="flex items-center gap-3">
+          <LogoutButton />
+          
           <Button
             variant="ghost"
             size="sm"
