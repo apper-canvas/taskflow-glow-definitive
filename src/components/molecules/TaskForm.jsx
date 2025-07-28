@@ -15,11 +15,11 @@ const TaskForm = ({
   isLoading = false 
 }) => {
   const [formData, setFormData] = useState({
-    title: initialData.title || "",
-    description: initialData.description || "",
-    categoryId: initialData.categoryId || (categories[0]?.Id?.toString() || ""),
-    priority: initialData.priority || "medium",
-    dueDate: initialData.dueDate ? format(new Date(initialData.dueDate), "yyyy-MM-dd") : ""
+    title: initialData?.title || "",
+    description: initialData?.description || "",
+    categoryId: initialData?.categoryId || (categories[0]?.Id?.toString() || ""),
+    priority: initialData?.priority || "medium",
+    dueDate: initialData?.dueDate ? format(new Date(initialData.dueDate), "yyyy-MM-dd") : ""
   })
 
   const handleSubmit = (e) => {
