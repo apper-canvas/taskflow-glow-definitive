@@ -28,10 +28,10 @@ const taskCounts = useMemo(() => {
   const totalTasks = tasks.length
   const completedTasks = tasks.filter(task => task.completed).length
 
-  const allCategories = [
+const allCategories = useMemo(() => [
     { Id: "all", name: "All Tasks", color: "#5B4FE5" },
     ...categories
-  ]
+  ], [categories])
 
   // Desktop Sidebar (Static)
   const DesktopSidebar = () => (
