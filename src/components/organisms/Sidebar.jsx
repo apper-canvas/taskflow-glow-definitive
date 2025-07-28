@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react"
+import { useState, useEffect, useMemo } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import ApperIcon from "@/components/ApperIcon"
 import Button from "@/components/atoms/Button"
@@ -12,10 +12,8 @@ const Sidebar = ({
   isOpen,
   onClose 
 }) => {
-  const [taskCounts, setTaskCounts] = useState({})
-
-  useEffect(() => {
-    const counts = categories.reduce((acc, category) => {
+const taskCounts = useMemo(() => {
+    return categories.reduce((acc, category) => {
       if (category.Id === "all") {
         acc[category.Id] = tasks.filter(task => !task.completed).length
       } else {
@@ -25,7 +23,6 @@ const Sidebar = ({
       }
       return acc
     }, {})
-    setTaskCounts(counts)
   }, [categories, tasks])
 
   const totalTasks = tasks.length
